@@ -1,0 +1,13 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+SUMMARY:{{ event.title }}
+DTSTART;TZID={{ event.start_date }}
+DTEND;TZID={{ event.end_date }}
+LOCATION: {{ event.location }}
+DESCRIPTION: {{ event.description }}
+STATUS:CONFIRMED
+SEQUENCE:0
+END:VEVENT
+END:VCALENDAR
